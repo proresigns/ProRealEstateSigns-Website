@@ -515,8 +515,8 @@ p{
 .footer-brand > img{
     display:block;
     width:auto;
-    height:70px;
-    max-width:280px;
+    height:auto;
+    max-width:320px;
 }
 
 .footer-brand p{
@@ -525,9 +525,16 @@ p{
     font-size:17px;
     line-height:1.5;
 }
+.footer-social-title{
+    margin:24px 0 8px;
+    color:rgba(255,255,255,.85);
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:.5px;
+}
 
 .footer-social{
-    margin-top:20px;
+    margin-top:0;
 }
 
 .footer-social a{
@@ -622,5 +629,508 @@ p{
 
     to{
         transform:translateX(-50%);
+    }
+}
+/* =====================================
+   Mobile Coverage Page Fix
+===================================== */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .coverage-layout,
+    .coverage-grid,
+    .service-area-layout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 35px;
+    }
+
+    .coverage-content,
+    .coverage-text,
+    .coverage-card,
+    .service-area-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+    }
+
+    .coverage-section,
+    .service-area-section {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .coverage-content p,
+    .coverage-text p,
+    .coverage-card p,
+    .service-area-card p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .coverage-card,
+    .service-area-card {
+        padding: 36px 26px;
+        border-radius: 30px;
+    }
+
+    .coverage-card h2,
+    .service-area-card h2 {
+        font-size: 38px;
+        line-height: 1.08;
+        overflow-wrap: break-word;
+    }
+
+    .county-list,
+    .coverage-counties {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        width: 100%;
+    }
+
+    .county-list a,
+    .county-list span,
+    .coverage-counties a,
+    .coverage-counties span {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+/* =====================================
+   Mobile Navigation
+===================================== */
+
+.mobile-menu-button,
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .site-header {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .nav-wrapper {
+        min-height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .brand {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .brand img {
+        display: block;
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 52px;
+        height: 52px;
+        padding: 0;
+        gap: 6px;
+        background: #12395a;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .mobile-menu-button span {
+        display: block;
+        width: 23px;
+        height: 3px;
+        background: #ffffff;
+        border-radius: 10px;
+        transition:
+            transform 0.25s ease,
+            opacity 0.25s ease;
+    }
+
+    .mobile-menu-button.is-open span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .mobile-menu-button.is-open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-button.is-open span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .mobile-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18px 24px 28px;
+        background: #ffffff;
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.14);
+    }
+
+    .mobile-nav.is-open {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .mobile-nav a {
+        display: block;
+        padding: 16px 4px;
+        color: #0d2b43;
+        font-size: 19px;
+        font-weight: 700;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(13, 43, 67, 0.1);
+    }
+
+    .mobile-nav a:last-child {
+        border-bottom: 0;
+    }
+
+    .mobile-nav .mobile-login-button {
+        margin-top: 16px;
+        padding: 16px 24px;
+        color: #ffffff;
+        text-align: center;
+        background: #12395a;
+        border-radius: 999px;
+    }
+}
+/* =====================================
+   Mobile Header and Open Menu Repair
+===================================== */
+
+@media (max-width: 768px) {
+
+    .nav-wrapper {
+        min-height: 88px;
+    }
+
+    .brand img {
+        width: auto;
+        max-width: 210px;
+        max-height: 72px;
+        object-fit: contain;
+    }
+
+    .mobile-menu-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 88px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-height: calc(100dvh - 88px);
+        padding: 22px 24px 32px;
+        overflow-y: auto;
+        background: #ffffff;
+        box-shadow: none;
+        z-index: 1001;
+    }
+
+    .mobile-nav.is-open {
+        display: flex;
+    }
+
+    body:has(.mobile-nav.is-open) {
+        overflow: hidden;
+    }
+}
+/* =====================================
+   Home Page Footer Mobile Fix
+===================================== */
+
+@media (max-width: 768px) {
+
+    .site-footer {
+        padding: 60px 0 30px;
+        overflow: hidden;
+    }
+
+    .footer-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 45px;
+        width: 100%;
+    }
+
+    .footer-brand {
+        width: 100%;
+    }
+
+    .footer-brand img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 260px;
+    margin: 0 0 20px;
+}
+
+    .footer-brand p {
+        max-width: 280px;
+        font-size: 18px;
+        line-height: 1.55;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        width: 100%;
+    }
+
+    .footer-nav a {
+        display: block;
+        width: 100%;
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+        font-size: 18px;
+    }
+
+    .footer-nav a:last-child {
+        border-bottom: none;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        margin-top: 45px;
+        padding-top: 28px;
+    }
+
+    .footer-bottom p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: left;
+    }
+}
+/* =====================================
+   Dashboard Section Mobile Fix
+===================================== */
+
+@media (max-width: 768px) {
+
+    .dashboard-section,
+    .platform-section,
+    .management-section {
+        padding-left: 24px;
+        padding-right: 24px;
+        overflow: hidden;
+    }
+
+    .dashboard-layout,
+    .platform-layout,
+    .management-layout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 36px;
+    }
+
+    .dashboard-visual,
+    .platform-visual,
+    .management-visual,
+    .dashboard-content,
+    .platform-content,
+    .management-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+    }
+
+    .dashboard-content,
+    .platform-content,
+    .management-content {
+        order: 1;
+    }
+
+    .dashboard-visual,
+    .platform-visual,
+    .management-visual {
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dashboard-visual img,
+    .platform-visual img,
+    .management-visual img {
+        display: block;
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+    }
+
+    .dashboard-content h2,
+    .platform-content h2,
+    .management-content h2 {
+        font-size: clamp(42px, 12vw, 64px);
+        line-height: 0.98;
+        letter-spacing: -2px;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .dashboard-content p,
+    .platform-content p,
+    .management-content p {
+        font-size: 20px;
+        line-height: 1.65;
+    }
+
+    .dashboard-features,
+    .platform-features,
+    .management-features {
+        width: 100%;
+        margin-top: 28px;
+    }
+
+    .dashboard-features li,
+    .platform-features li,
+    .management-features li {
+        font-size: 20px;
+        line-height: 1.35;
+        margin-bottom: 22px;
+    }
+}
+
+/* =====================================
+   Consistent Mobile Side Margins
+   Keeps section backgrounds full width
+   while moving section content inward.
+===================================== */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: calc(100% - 48px);
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* =====================================
+   Mobile Footer Final Fix
+===================================== */
+
+@media (max-width: 768px) {
+
+    .site-footer {
+        width: 100%;
+        padding: 60px 0 30px;
+        overflow: hidden;
+    }
+
+    .site-footer .container {
+        width: 100%;
+        padding-left: 28px;
+        padding-right: 28px;
+        box-sizing: border-box;
+    }
+
+    .footer-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 42px;
+        width: 100%;
+    }
+
+    .footer-brand {
+        width: 100%;
+    }
+
+    .footer-brand img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 22px;
+    }
+
+    .footer-brand p {
+        max-width: 310px;
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.55;
+    }
+
+@media (max-width: 768px) {
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .footer-links a {
+        display: block;
+        width: 100%;
+        text-align: left;
+        white-space: nowrap;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-decoration: none;
+        padding: 0;
+        border: none;
+    }
+
+}
+
+    .footer-bottom {
+        width: 100%;
+        margin-top: 45px;
+        padding-top: 26px;
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .footer-bottom p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: left;
     }
 }

@@ -15,30 +15,54 @@
 <body>
 
 <header class="site-header">
-
     <div class="container nav-wrapper">
 
-        <a href="../index.html" class="brand">
-            <img src="../images/Pro Real Estate Signs Logo v2 PNG.png"
-                 alt="Pro Real Estate Signs">
+        <a href="../index.html" class="brand" aria-label="Pro Real Estate Signs home">
+            <img src="../images/Pro Real Estate Signs Logo v2 PNG.png" alt="Pro Real Estate Signs">
         </a>
 
-<nav class="main-nav">
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="../index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="coverage.html">Coverage</a>
+            <a href="about.html">About</a>
 
-    <a href="../index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="coverage.html">Coverage</a>
-    <a href="about.html">About</a>
+            <a href="https://prorealestatesigns.signtraker.com/Account/Login"
+                class="button button-small">
+                Log In
+            </a>
+        </nav>
 
-   <a href="https://prorealestatesigns.signtraker.com/Account/Login"
-   class="button button-small">
-    Log In
-</a>
+        <button
+            class="mobile-menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-navigation">
 
-</nav>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
     </div>
 
+    <nav
+        class="mobile-nav"
+        id="mobile-navigation"
+        aria-label="Mobile navigation">
+
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="coverage.html">Coverage</a>
+        <a href="about.html">About</a>
+
+        <a href="https://prorealestatesigns.signtraker.com/Account/Login"
+            class="mobile-login-button">
+            Log In
+        </a>
+
+    </nav>
 </header>
 
 <main>
@@ -227,8 +251,10 @@
          alt="Pro Real Estate Signs">
 
     <p>
-        The Region's Real Estate Sign Infrastructure.
-    </p>
+    The Region's Real Estate Sign Infrastructure.
+</p>
+
+<p class="footer-social-title">Follow Us</p>
 
 <div class="footer-social">
 
