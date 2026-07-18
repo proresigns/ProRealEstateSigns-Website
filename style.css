@@ -54,7 +54,7 @@ p{
 
     color:var(--gray);
 
-    margin-top:20px;
+    margin:20px 0 48px;
 
     max-width:700px;
 
@@ -101,7 +101,7 @@ p{
 }
 
 .hero{
-    min-height:calc(100vh - 76px);
+    min-height:calc(85vh - 76px);
     display:flex;
     align-items:center;
     padding:100px 0;
@@ -567,6 +567,17 @@ p{
 }
 .cta{
     padding:120px 0;
+}
+
+.cta h2{
+    max-width:760px;
+    margin-bottom:24px;
+}
+
+.cta .section-text{
+    max-width:760px;
+    margin:0 0 42px 0;
+    text-align:left;
 }
 /* =====================================
    Announcement Bar
