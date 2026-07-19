@@ -1589,3 +1589,33 @@ p{
 align-items:center;
 gap:8px;
 }
+/* =====================================
+   About Page Mobile Section Order
+===================================== */
+
+@media (max-width: 768px) {
+
+    .dashboard-layout{
+        display:flex;
+        flex-direction:column;
+        gap:36px;
+    }
+
+    .dashboard-content{
+        order:1;
+        width:100%;
+    }
+
+    .dashboard-image{
+        order:2;
+        width:100%;
+        margin-top:10px;
+    }
+
+    .dashboard-image .app-window{
+        width:100%;
+        max-width:100%;
+        transform:none;
+    }
+
+}
