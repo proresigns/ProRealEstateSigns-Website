@@ -151,7 +151,7 @@ p{
     width:560px;
     height:560px;
     top:50%;
-    right:4%;
+    right:-4%;
     transform:translateY(-50%);
     pointer-events:none;
     z-index:1;
@@ -223,7 +223,7 @@ p{
 
     mask-composite:intersect;
 
-    opacity:.88;
+    opacity:.45;
 }
 
 /* Lower-left translucent bubble */
