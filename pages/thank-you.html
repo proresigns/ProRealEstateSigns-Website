@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Thank you for contacting Pro Real Estate Signs.">
+
+    <title>Thank You | Pro Real Estate Signs</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .thank-you-page {
+            min-height: calc(100vh - 88px);
+            display: flex;
+            align-items: center;
+            padding: 90px 0;
+            background:
+                radial-gradient(
+                    circle at 78% 28%,
+                    rgba(73, 154, 222, 0.18),
+                    transparent 38%
+                ),
+                linear-gradient(
+                    135deg,
+                    #ffffff 0%,
+                    #f6faff 55%,
+                    #eef7ff 100%
+                );
+        }
+
+        .thank-you-card {
+            width: min(780px, 100%);
+            margin: 0 auto;
+            padding: 58px 48px;
+            border: 1px solid rgba(25, 35, 45, 0.09);
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.96);
+            box-shadow:
+                0 28px 70px rgba(25, 45, 70, 0.10),
+                0 4px 18px rgba(25, 45, 70, 0.05);
+            text-align: center;
+        }
+
+        .thank-you-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 24px;
+            border-radius: 50%;
+            background: rgba(10, 61, 98, 0.12);
+            color: #0a3d62;
+            font-size: 34px;
+            font-weight: 700;
+        }
+
+        .thank-you-card .eyebrow {
+            margin: 0 0 16px;
+        }
+
+        .thank-you-card h1 {
+            max-width: 680px;
+            margin: 0 auto 22px;
+            font-size: clamp(42px, 6vw, 68px);
+            line-height: 1.05;
+            letter-spacing: -3px;
+        }
+
+        .thank-you-text {
+            max-width: 620px;
+            margin: 0 auto 36px;
+            color: #666666;
+            font-size: 20px;
+            line-height: 1.7;
+        }
+
+        .thank-you-details {
+            max-width: 620px;
+            margin: 0 auto 38px;
+            padding: 28px;
+            border: 1px solid rgba(25, 35, 45, 0.08);
+            border-radius: 18px;
+            background: #f5f5f7;
+            text-align: left;
+        }
+
+        .thank-you-details h2 {
+            margin: 0 0 18px;
+            font-size: 25px;
+            line-height: 1.2;
+        }
+
+        .thank-you-details ul {
+            display: grid;
+            gap: 14px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .thank-you-details li {
+            position: relative;
+            padding-left: 30px;
+            color: #202832;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .thank-you-details li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #0a3d62;
+            font-weight: 700;
+        }
+
+        .thank-you-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            padding: 0 26px;
+            border: 1px solid #0a3d62;
+            border-radius: 999px;
+            background: #0a3d62;
+            color: #ffffff;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow:
+                0 8px 24px rgba(10, 61, 98, 0.18),
+                0 2px 6px rgba(10, 61, 98, 0.10);
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease;
+        }
+
+        .thank-you-button:hover {
+            transform: translateY(-2px);
+            background: #06273f;
+        }
+
+        @media (max-width: 650px) {
+            .thank-you-page {
+                min-height: auto;
+                padding: 60px 0;
+            }
+
+            .thank-you-card {
+                padding: 42px 22px;
+                border-radius: 18px;
+            }
+
+            .thank-you-card h1 {
+                font-size: 42px;
+                letter-spacing: -2px;
+            }
+
+            .thank-you-text {
+                font-size: 18px;
+            }
+
+            .thank-you-details {
+                padding: 24px 20px;
+            }
+
+            .thank-you-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="thank-you-page">
+
+        <div class="container">
+
+            <section class="thank-you-card">
+
+                <div class="thank-you-icon" aria-hidden="true">
+                    ✓
+                </div>
+
+                <p class="eyebrow">
+                    Request Received
+                </p>
+
+                <h1>
+                    Thank You for Contacting Us.
+                </h1>
+
+                <p class="thank-you-text">
+                    Your request has been successfully submitted.
+                    Pro Real Estate Signs will review the information
+                    you provided and contact you about the next steps.
+                </p>
+
+                <div class="thank-you-details">
+
+                    <h2>
+                        What Happens Next?
+                    </h2>
+
+                    <ul>
+                        <li>
+                            We will review the details of your request.
+                        </li>
+
+                        <li>
+                            We will contact you if additional information is needed.
+                        </li>
+
+                        <li>
+                            We will provide the appropriate next steps for your project.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <a href="../index.html" class="thank-you-button">
+                    Return to Home
+                </a>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

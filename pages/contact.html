@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Request real estate sign installation, printing, repairs, maintenance, and commercial sign services from Pro Real Estate Signs.">
+
+    <title>
+        Request Service | Pro Real Estate Signs
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /*
+        Contact page styling
+        */
+
+        .contact-hero {
+            padding: 110px 0 75px;
+            background:
+                radial-gradient(
+                    circle at 75% 35%,
+                    rgba(73, 154, 222, 0.16),
+                    transparent 38%
+                ),
+                linear-gradient(
+                    135deg,
+                    #ffffff 0%,
+                    #f6faff 55%,
+                    #eef7ff 100%
+                );
+        }
+
+        .contact-hero-content {
+            max-width: 780px;
+        }
+
+        .contact-hero h1 {
+            max-width: 760px;
+            margin-top: 12px;
+            margin-bottom: 24px;
+        }
+
+        .contact-hero .hero-text {
+            max-width: 680px;
+        }
+
+        .contact-section {
+            padding: 90px 0;
+            background: #ffffff;
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr);
+            gap: 70px;
+            align-items: start;
+        }
+
+        .contact-information h2 {
+            margin-top: 12px;
+            margin-bottom: 22px;
+        }
+
+        .contact-information .section-text {
+            margin-bottom: 34px;
+        }
+
+        .contact-benefits {
+            display: grid;
+            gap: 18px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .contact-benefits li {
+            position: relative;
+            padding-left: 30px;
+            line-height: 1.6;
+        }
+
+        .contact-benefits li::before {
+            content: "✓";
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #176fc1;
+            font-weight: 700;
+        }
+
+        .contact-card {
+            padding: 42px;
+            border: 1px solid rgba(25, 35, 45, 0.1);
+            border-radius: 20px;
+            background: #ffffff;
+            box-shadow:
+                0 24px 60px rgba(25, 45, 70, 0.08),
+                0 4px 16px rgba(25, 45, 70, 0.04);
+        }
+
+        .contact-card h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .contact-card-intro {
+            margin-top: 0;
+            margin-bottom: 32px;
+            color: #5d6670;
+            line-height: 1.65;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 22px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .form-group {
+            display: grid;
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-size: 0.94rem;
+            font-weight: 600;
+            color: #202832;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #cfd7df;
+            border-radius: 9px;
+            background: #ffffff;
+            color: #202832;
+            font: inherit;
+            transition:
+                border-color 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #176fc1;
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(23, 111, 193, 0.12);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-note {
+            margin: -4px 0 0;
+            color: #707982;
+            font-size: 0.87rem;
+            line-height: 1.5;
+        }
+
+        .contact-submit {
+            justify-self: start;
+            border: 0;
+            cursor: pointer;
+        }
+
+        .required-marker {
+            color: #176fc1;
+        }
+
+        .contact-secondary {
+            padding: 70px 0;
+            background: #f6f8fa;
+        }
+
+       .contact-secondary-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+        .contact-detail-card {
+            padding: 30px;
+            border: 1px solid rgba(25, 35, 45, 0.08);
+            border-radius: 14px;
+            background: #ffffff;
+        }
+
+        .contact-detail-card h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .contact-detail-card p {
+            margin-bottom: 0;
+            line-height: 1.65;
+        }
+
+        .contact-detail-card a {
+            color: inherit;
+        }
+
+        .hidden-field {
+            position: absolute;
+            left: -9999px;
+        }
+
+        @media (max-width: 900px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 45px;
+            }
+
+            .contact-secondary-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .contact-hero {
+                padding: 80px 0 55px;
+            }
+
+            .contact-section {
+                padding: 65px 0;
+            }
+
+            .contact-card {
+                padding: 28px 22px;
+                border-radius: 14px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-submit {
+                box-sizing: border-box;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container nav-wrapper">
+
+            <a href="../index.html"
+                class="brand"
+                aria-label="Pro Real Estate Signs home">
+
+                <img src="../images/Pro Real Estate Signs Logo v2 PNG.png"
+                    alt="Pro Real Estate Signs">
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+
+                <a href="../index.html">Home</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="coverage.html">Coverage</a>
+
+                <a href="about.html">About</a>
+
+                <a href="https://prorealestatesigns.signtraker.com/Account/Login"
+                    class="button button-small">
+
+                    Log In
+                </a>
+
+            </nav>
+
+            <button class="mobile-menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobile-navigation">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+        <nav class="mobile-nav"
+            id="mobile-navigation"
+            aria-label="Mobile navigation">
+
+            <a href="../index.html">Home</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="coverage.html">Coverage</a>
+
+            <a href="about.html">About</a>
+
+            <a href="https://prorealestatesigns.signtraker.com/Account/Login"
+                class="mobile-login-button">
+
+                Log In
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="contact-hero">
+            <div class="container contact-hero-content">
+
+                <p class="eyebrow">
+                    Request Service
+                </p>
+
+                <h1>
+<h1>
+    Tell Us About Your Sign Needs.
+</h1>                </h1>
+
+                <p class="hero-text">
+                    Need sign installation, printing, repairs, maintenance,
+                    or help with a commercial signage project? Send us the
+                    details and our team will review your request.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container contact-layout">
+
+                <div class="contact-information">
+
+                    <p class="eyebrow">
+                        Let’s Get Started
+                    </p>
+
+                    <h2>
+                        Professional Sign Service Built Around Your Needs.
+                    </h2>
+
+                    <p class="section-text">
+                        Pro Real Estate Signs provides professional field
+                        service, printing, installation, maintenance, and
+                        inventory support throughout Northwest Indiana and
+                        surrounding areas.
+                    </p>
+
+                    <ul class="contact-benefits">
+
+                        <li>
+                            Residential and commercial sign installation
+                        </li>
+
+                        <li>
+                            In-house printing and graphic production
+                        </li>
+
+                        <li>
+                            Rider changes, repairs, and maintenance
+                        </li>
+
+                        <li>
+                            Sign removal and photo confirmation
+                        </li>
+
+                        <li>
+                            Extended service-area project review
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <h2>
+                        Request Service
+                    </h2>
+
+                    <p class="contact-card-intro">
+                        Complete the form below with as much information as
+                        possible. We’ll review your request and contact you
+                        about the next steps.
+                    </p>
+
+                    <!--
+                    Replace YOUR_EMAIL_ADDRESS below with the email address
+                    where you want service requests delivered.
+
+                    Example:
+                    action="https://formsubmit.co/info@yourdomain.com"
+                    -->
+
+                   <form
+    id="contact-form"
+    class="contact-form"
+    action="https://formspree.io/f/maqroppg"
+    method="POST">
+
+                        <!-- Spam-prevention field -->
+
+                        <div class="hidden-field"
+                            aria-hidden="true">
+
+                            <label for="company-website">
+                                Leave this field empty
+                            </label>
+
+                            <input type="text"
+                                id="company-website"
+                                name="_honey"
+                                tabindex="-1"
+                                autocomplete="off">
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Name
+                                    <span class="required-marker">*</span>
+                                </label>
+
+                                <input type="text"
+                                    id="name"
+                                    name="Name"
+                                    autocomplete="name"
+                                    required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="brokerage">
+                                    Brokerage or Company
+                                </label>
+
+                                <input type="text"
+                                    id="brokerage"
+                                    name="Brokerage or Company"
+                                    autocomplete="organization">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email
+                                    <span class="required-marker">*</span>
+                                </label>
+
+                                <input type="email"
+                                    id="email"
+                                    name="Email"
+                                    autocomplete="email"
+                                    required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone
+                                    <span class="required-marker">*</span>
+                                </label>
+
+                                <input type="tel"
+                                    id="phone"
+                                    name="Phone"
+                                    autocomplete="tel"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="property-address">
+                                Property or Project Address
+                            </label>
+
+                            <input type="text"
+                                id="property-address"
+                                name="Property or Project Address"
+                                autocomplete="street-address"
+                                placeholder="Street address, city, and state">
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="service-type">
+                                    Type of Service
+                                    <span class="required-marker">*</span>
+                                </label>
+
+                                <select id="service-type"
+                                    name="Type of Service"
+                                    required>
+
+                                    <option value="" selected disabled>
+                                        Select a service
+                                    </option>
+
+                                    <option value="Sign Installation">
+                                        Sign Installation
+                                    </option>
+
+                                    <option value="Sign Removal">
+                                        Sign Removal
+                                    </option>
+
+                                    <option value="Printing and Graphic Design">
+                                        Printing &amp; Graphic Design
+                                    </option>
+
+                                    <option value="Commercial Installation">
+                                        Commercial Installation
+                                    </option>
+
+                                    <option value="Repairs and Maintenance">
+                                        Repairs &amp; Maintenance
+                                    </option>
+
+                                    <option value="Inventory Management">
+                                        Inventory Management
+                                    </option>
+
+                                    <option value="Extended Coverage Request">
+                                        Extended Coverage Request
+                                    </option>
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="timeline">
+                                    Preferred Timeline
+                                </label>
+
+                                <select id="timeline"
+                                    name="Preferred Timeline">
+
+                                    <option value="" selected>
+                                        Select a timeline
+                                    </option>
+
+                                    <option value="As soon as possible">
+                                        As Soon as Possible
+                                    </option>
+
+                                    <option value="Within one week">
+                                        Within One Week
+                                    </option>
+
+                                    <option value="Within two weeks">
+                                        Within Two Weeks
+                                    </option>
+
+                                    <option value="Within one month">
+                                        Within One Month
+                                    </option>
+
+                                    <option value="Planning ahead">
+                                        Planning Ahead
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Project Details
+                                <span class="required-marker">*</span>
+                            </label>
+
+                            <textarea id="message"
+                                name="Project Details"
+                                required
+                                placeholder="Tell us what you need, including sign size, installation details, location conditions, quantities, or other helpful information."></textarea>
+
+                        </div>
+
+                        <p class="form-note">
+                            Fields marked with an asterisk are required.
+                        </p>
+
+                        <button type="submit"
+                            class="button contact-submit">
+
+                            Send Service Request
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact-secondary">
+            <div class="container contact-secondary-layout">
+
+                <article class="contact-detail-card">
+
+                    <h3>
+                        Service Area
+                    </h3>
+
+                    <p>
+                        Serving Northwest Indiana with extended coverage
+                        available throughout surrounding communities.
+                    </p>
+
+                </article>
+
+                <article class="contact-detail-card">
+
+
+                <article class="contact-detail-card">
+
+                    <h3>
+                        Commercial Projects
+                    </h3>
+
+                    <p>
+                        Large-format and development signage is evaluated
+                        based on size, installation requirements, location,
+                        and site conditions.
+                    </p>
+
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-layout">
+
+            <div class="footer-brand">
+
+                <img src="../images/Pro Real Estate Signs Logo v2 White PNG.png"
+                    alt="Pro Real Estate Signs">
+
+                <p>
+                    The Region's Real Estate Sign Infrastructure.
+                </p>
+
+                <p class="footer-social-title">
+                    Follow Us
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="https://www.facebook.com/ProRealEstateSigns"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook">
+
+                        <img src="../images/facebook.svg"
+                            alt="Facebook">
+                    </a>
+
+                    <a href="https://www.tiktok.com/@prorealestatesigns"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="TikTok">
+
+                        <img src="../images/tiktok.svg"
+                            alt="TikTok">
+                    </a>
+
+                </div>
+
+            </div>
+
+            <nav class="footer-links"
+                aria-label="Footer navigation">
+
+                <a href="services.html">Services</a>
+
+                <a href="coverage.html">Coverage</a>
+
+                <a href="about.html">About</a>
+
+                <a href="https://prorealestatesigns.signtraker.com/Account/Login">
+                    Log In
+                </a>
+
+                <a href="https://prorealestatesigns.signtraker.com/Account/Register">
+                    Request Account
+                </a>
+
+            </nav>
+
+        </div>
+
+        <div class="container footer-bottom">
+
+            <p>
+                &copy; 2026 Pro Real Estate Signs, LLC.
+                All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+    <script>
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: data,
+            headers: {
+                Accept: "application/json"
+            }
+        });
+
+        if (response.ok) {
+            window.location.href = "thank-you.html";
+        } else {
+            alert("There was a problem submitting your request. Please try again.");
+        }
+    } catch (error) {
+        alert("Unable to connect. Please try again.");
+    }
+});
+</script>
+
+<script src="../script.js"></script>
+
+</body>
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
