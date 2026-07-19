@@ -1510,3 +1510,69 @@ p{
         width:100%;
     }
 }
+/* =====================================
+   Communities We Serve
+===================================== */
+
+.communities-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.communities-section .section-header {
+    max-width: 900px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.community-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px 28px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.community-list span {
+    position: relative;
+    display: block;
+    padding-left: 28px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #102538;
+}
+
+.community-list span::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 700;
+    color: #0b4f78;
+}
+
+@media (max-width: 900px) {
+    .community-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 550px) {
+    .communities-section {
+        padding: 70px 0;
+    }
+
+    .communities-section .section-header {
+        margin-bottom: 40px;
+    }
+
+    .community-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .community-list span {
+        font-size: 16px;
+    }
+}
