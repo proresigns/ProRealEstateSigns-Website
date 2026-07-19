@@ -1576,3 +1576,16 @@ p{
         font-size: 16px;
     }
 }
+.app-footer{
+    padding:12px 18px;
+    background:#f5f7fa;
+    border-top:1px solid #e6e8ec;
+    color:#6b7280;
+    font-size:13px;
+    font-weight:600;
+    line-height:1.4;
+    text-align:left;
+    display:flex;
+align-items:center;
+gap:8px;
+}
