@@ -1853,3 +1853,126 @@ gap:8px;
         padding: 28px 24px;
     }
 }
+/* =====================================
+   How It Works Page
+====================================== */
+
+.how-it-works-hero .hero-content {
+    max-width: 820px;
+}
+
+.how-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+.account-process {
+    padding: 100px 0;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 52px;
+}
+
+.process-card {
+    position: relative;
+    padding: 34px;
+    border: 1px solid rgba(10, 75, 130, 0.12);
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 16px 45px rgba(7, 38, 68, 0.08);
+}
+
+.process-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 24px;
+    border-radius: 50%;
+    background: #0a4b82;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.process-card h3 {
+    margin: 0 0 14px;
+}
+
+.process-card p {
+    margin: 0;
+}
+
+.onboarding-note {
+    padding: 80px 0;
+    background: #f3f7fb;
+}
+
+.onboarding-note-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 48px;
+}
+
+.onboarding-note-layout > div {
+    max-width: 760px;
+}
+
+@media (max-width: 900px) {
+    .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .onboarding-note-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .onboarding-note-layout .button {
+        justify-self: start;
+    }
+}
+
+@media (max-width: 600px) {
+    .how-hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .how-hero-actions .button {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+    }
+
+    .account-process {
+        padding: 72px 0;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+        margin-top: 38px;
+    }
+
+    .process-card {
+        padding: 28px;
+    }
+
+    .onboarding-note {
+        padding: 64px 0;
+    }
+
+    .onboarding-note-layout .button {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+    }
+}
