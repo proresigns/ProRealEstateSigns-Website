@@ -2128,3 +2128,48 @@ gap:8px;
         padding: 1.1rem;
     }
 }
+/* =====================================
+   Enterprise Onboarding Mobile Override
+===================================== */
+
+@media (max-width:768px){
+
+    .enterprise-onboarding-layout{
+        display:flex;
+        flex-direction:column;
+        gap:2rem;
+    }
+
+    .enterprise-onboarding-content,
+    .enterprise-onboarding-details{
+        width:100%;
+        max-width:100%;
+    }
+
+    .enterprise-onboarding-details{
+        background:#fff;
+        border:1px solid #e4e7eb;
+        border-radius:18px;
+        padding:1.75rem;
+        box-shadow:0 10px 28px rgba(0,0,0,.08);
+    }
+
+    .enterprise-onboarding-list{
+        list-style:none !important;
+        margin:0;
+        padding:0;
+    }
+
+    .enterprise-onboarding-list li{
+        list-style:none !important;
+    }
+
+    .enterprise-onboarding-callout{
+        margin-top:1.75rem;
+        padding:1.35rem;
+        text-align:center;
+        font-size:1.05rem;
+        line-height:1.6;
+    }
+
+}
