@@ -1813,11 +1813,13 @@ gap:8px;
 
 .why-pro-number::after {
     content: "";
+    display: block;
+
     width: 11px;
     height: 20px;
 
-    border-right: 4px solid #fff;
-    border-bottom: 4px solid #fff;
+    border-right: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
 
     transform: rotate(45deg);
     margin-top: -3px;
