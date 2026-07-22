@@ -1619,3 +1619,237 @@ gap:8px;
     }
 
 }
+/* ============================
+   Trusted Brokerages
+============================ */
+
+.trusted-brokerages {
+    padding: 100px 0;
+    background: #f8fafc;
+}
+
+.trusted-brokerages-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 60px;
+}
+
+.brokerage-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+}
+
+.brokerage-logo-item {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 28px;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: .25s ease;
+}
+
+.brokerage-logo-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+.brokerage-logo-item img {
+    max-width: 170px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    filter: grayscale(100%);
+    opacity: .75;
+
+    transition: .25s ease;
+}
+
+.brokerage-logo-item:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.c21-circle-logo:hover img {
+    filter: none;
+}
+
+.weichert-logo:hover img {
+    filter: none;
+}
+
+@media (max-width:1100px) {
+    .brokerage-logo-grid {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media (max-width:700px) {
+    .brokerage-logo-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .brokerage-logo-item {
+        height:120px;
+        padding:20px;
+    }
+
+    .brokerage-logo-item img {
+        max-width:140px;
+        max-height:60px;
+    }
+}
+.c21-circle-logo img:hover {
+    filter: none;
+}
+.weichert-logo img:hover {
+    filter: none;
+}
+/* Century 21 Circle */
+.c21-circle-logo:hover img {
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(79%)
+        sepia(87%)
+        saturate(1617%)
+        hue-rotate(343deg)
+        brightness(102%)
+        contrast(104%);
+}
+
+/* Weichert */
+.weichert-logo:hover img {
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(90%)
+        sepia(80%)
+        saturate(1100%)
+        hue-rotate(2deg)
+        brightness(104%)
+        contrast(104%);
+}
+/* ============================
+   Why Professionals Choose Pro
+============================ */
+
+.why-pro {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.why-pro-header {
+    max-width: 760px;
+    margin: 0 auto 56px;
+    text-align: center;
+}
+
+.why-pro-header .eyebrow {
+    margin-bottom: 16px;
+}
+
+.why-pro-header h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.why-pro-header .section-text {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.why-pro-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.why-pro-card {
+    position: relative;
+    min-height: 250px;
+    padding: 32px 28px;
+
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.why-pro-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 68, 112, 0.28);
+    box-shadow: 0 18px 38px rgba(15, 23, 42, 0.1);
+}
+
+.why-pro-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+    margin-bottom: 28px;
+
+    border-radius: 50%;
+    background: #0a4b82;
+    color: #ffffff;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.why-pro-card h3 {
+    margin: 0 0 16px;
+
+    font-size: 21px;
+    line-height: 1.25;
+}
+
+.why-pro-card p {
+    margin: 0;
+
+    color: #5f6875;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+@media (max-width: 1050px) {
+    .why-pro-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .why-pro {
+        padding: 76px 0;
+    }
+
+    .why-pro-header {
+        margin-bottom: 40px;
+    }
+
+    .why-pro-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .why-pro-card {
+        min-height: auto;
+        padding: 28px 24px;
+    }
+}
