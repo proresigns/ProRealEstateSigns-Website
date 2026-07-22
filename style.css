@@ -1988,3 +1988,143 @@ gap:8px;
         text-align: center;
     }
 }
+/* ==========================
+   Enterprise Onboarding
+========================== */
+
+.enterprise-onboarding {
+    padding: 6rem 0;
+    background: #f5f7f9;
+}
+
+.enterprise-onboarding-layout {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.enterprise-onboarding-content {
+    max-width: 650px;
+}
+
+.enterprise-onboarding-content h2 {
+    margin: 0 0 1.25rem;
+}
+
+.enterprise-onboarding-intro {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: #111;
+}
+
+.enterprise-onboarding-details {
+    align-self: center;
+    height: auto;
+    min-height: 0;
+    padding: 2.25rem;
+    background: #fff;
+    border: 1px solid #e4e7eb;
+    border-radius: 18px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+}
+
+.enterprise-onboarding-details h3 {
+    margin: 0 0 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+.enterprise-onboarding-list {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.enterprise-onboarding-list li {
+    position: relative;
+    margin: 0;
+    padding-left: 2rem;
+    line-height: 1.55;
+}
+
+/* CSS-drawn checkmark for reliable Safari/iPhone rendering */
+.enterprise-onboarding-list li::before {
+    content: "";
+    position: absolute;
+    top: 0.15rem;
+    left: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: #005a8d;
+    border-radius: 50%;
+}
+
+.enterprise-onboarding-list li::after {
+    content: "";
+    position: absolute;
+    top: 0.43rem;
+    left: 0.35rem;
+    width: 0.48rem;
+    height: 0.25rem;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg);
+}
+
+.enterprise-onboarding-callout {
+    margin: 1.75rem 0 0;
+    padding: 1.25rem 1.4rem;
+    color: #fff;
+    background: #005a8d;
+    border-radius: 12px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.enterprise-onboarding-callout strong {
+    color: inherit;
+}
+
+@media (max-width: 900px) {
+    .enterprise-onboarding {
+        padding: 4rem 0;
+    }
+
+    .enterprise-onboarding-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .enterprise-onboarding-content {
+        max-width: none;
+    }
+
+    .enterprise-onboarding-details {
+        width: 100%;
+        padding: 1.75rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .enterprise-onboarding {
+        padding: 3.5rem 0;
+    }
+
+    .enterprise-onboarding-details {
+        padding: 1.4rem;
+        border-radius: 14px;
+    }
+
+    .enterprise-onboarding-details h3 {
+        font-size: 1.15rem;
+    }
+
+    .enterprise-onboarding-callout {
+        padding: 1.1rem;
+    }
+}
