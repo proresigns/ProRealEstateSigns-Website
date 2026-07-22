@@ -22,3 +22,21 @@ if (mobileMenuButton && mobileNavigation) {
         });
     });
 }
+/* Force a consistent white checkmark on all devices */
+.why-pro-number {
+    position: relative;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent;
+}
+
+.why-pro-number::before {
+    content: "";
+    width: 10px;
+    height: 20px;
+
+    border-right: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+
+    transform: rotate(45deg) translate(-2px, -2px);
+    transform-origin: center;
+}
