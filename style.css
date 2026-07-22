@@ -1807,10 +1807,22 @@ gap:8px;
 
     border-radius: 50%;
     background: #0a4b82;
-    color: #ffffff;
 
-    font-size: 24px;
-    font-weight: 700;
+    position: relative;
+}
+
+.why-pro-number::after {
+    content: "";
+    display: block;
+
+    width: 11px;
+    height: 20px;
+
+    border-right: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+
+    transform: rotate(45deg);
+    margin-top: -3px;
 }
 
 .why-pro-card h3 {
