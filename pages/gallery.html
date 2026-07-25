@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1F6VEGTLP6"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+        gtag("config", "G-1F6VEGTLP6");
+    </script>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="View residential and commercial real estate sign installations completed by Pro Real Estate Signs throughout Northwest Indiana."
+    >
+
+    <title>Real Estate Sign Installation Gallery | Pro Real Estate Signs</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="icon" href="../assets/favicon.ico" sizes="any">
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="../assets/favicon-32x32.png"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="../assets/favicon-16x16.png"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="../assets/apple-touch-icon.png"
+    >
+
+    <style>
+        /* =====================================
+           Gallery Page
+        ===================================== */
+
+        .gallery-hero {
+            position: relative;
+            isolation: isolate;
+            padding: 110px 0 100px;
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    circle at 82% 20%,
+                    rgba(66, 133, 244, 0.22) 0%,
+                    rgba(66, 133, 244, 0.08) 28%,
+                    transparent 55%
+                ),
+                linear-gradient(
+                    135deg,
+                    #ffffff 0%,
+                    #f7fbff 48%,
+                    #e4f0ff 100%
+                );
+        }
+
+        .gallery-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
+        .gallery-hero h1 {
+            max-width: 900px;
+            margin: 0;
+            font-size: clamp(54px, 7vw, 96px);
+            line-height: 0.98;
+            letter-spacing: -5px;
+        }
+
+        .gallery-hero .hero-text {
+            max-width: 720px;
+            margin: 30px 0 0;
+        }
+
+        .gallery-section {
+            padding: 110px 0 130px;
+            background: #f5f5f7;
+        }
+
+        .gallery-intro {
+            max-width: 760px;
+            margin: 0 auto 55px;
+            text-align: center;
+        }
+
+        .gallery-intro h2 {
+            margin: 0 0 22px;
+            font-size: clamp(40px, 5vw, 64px);
+            line-height: 1.08;
+            letter-spacing: -2px;
+        }
+
+        .gallery-intro .section-text {
+            margin: 0 auto;
+        }
+
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 55px;
+        }
+
+        .gallery-filter {
+            min-height: 46px;
+            padding: 0 22px;
+            border: 1px solid #d5dbe2;
+            border-radius: 999px;
+            background: #ffffff;
+            color: #0a3d62;
+            font: inherit;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+
+            transition:
+                color 0.2s ease,
+                background 0.2s ease,
+                border-color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .gallery-filter:hover {
+            transform: translateY(-2px);
+            border-color: #0a3d62;
+        }
+
+        .gallery-filter.is-active {
+            color: #ffffff;
+            background: #0a3d62;
+            border-color: #0a3d62;
+        }
+
+        .phone-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 42px 28px;
+            align-items: start;
+        }
+
+        .gallery-item {
+            min-width: 0;
+
+            transition:
+                opacity 0.25s ease,
+                transform 0.25s ease;
+        }
+
+        .gallery-item.is-hidden {
+            display: none;
+        }
+
+        .phone-frame {
+            position: relative;
+            width: 100%;
+            max-width: 265px;
+            margin: 0 auto;
+            padding: 11px;
+            overflow: hidden;
+
+            border: 2px solid #30343a;
+            border-radius: 38px;
+            background:
+                linear-gradient(
+                    145deg,
+                    #16191d 0%,
+                    #050607 55%,
+                    #1f2328 100%
+                );
+
+            box-shadow:
+                0 30px 55px rgba(0, 0, 0, 0.18),
+                0 8px 18px rgba(0, 0, 0, 0.14),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+
+            transition:
+                transform 0.28s ease,
+                box-shadow 0.28s ease;
+        }
+
+        .gallery-item:hover .phone-frame {
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 38px 70px rgba(0, 0, 0, 0.24),
+                0 12px 22px rgba(0, 0, 0, 0.16),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+        }
+
+        .phone-frame::before {
+            content: "";
+            position: absolute;
+            top: 17px;
+            left: 50%;
+            z-index: 4;
+            width: 38%;
+            height: 23px;
+            transform: translateX(-50%);
+            border-radius: 999px;
+            background: #050607;
+            pointer-events: none;
+        }
+
+        .phone-frame::after {
+            content: "";
+            position: absolute;
+            top: 23px;
+            left: calc(50% + 30px);
+            z-index: 5;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #182632;
+            box-shadow: inset 0 0 2px rgba(97, 180, 255, 0.7);
+            pointer-events: none;
+        }
+
+        .phone-screen {
+            position: relative;
+            aspect-ratio: 9 / 16;
+            overflow: hidden;
+            border-radius: 29px;
+            background: #dfe5ea;
+        }
+
+        .phone-screen button {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            border: 0;
+            background: none;
+            cursor: zoom-in;
+        }
+
+        .phone-screen img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            transition:
+                transform 0.45s ease,
+                filter 0.45s ease;
+        }
+
+        .gallery-item:hover .phone-screen img {
+            transform: scale(1.035);
+        }
+
+        .phone-home-indicator {
+            position: absolute;
+            bottom: 19px;
+            left: 50%;
+            z-index: 4;
+            width: 34%;
+            height: 5px;
+            transform: translateX(-50%);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+            pointer-events: none;
+        }
+
+        .gallery-caption {
+            max-width: 260px;
+            margin: 18px auto 0;
+            text-align: center;
+        }
+
+        .gallery-caption h3 {
+            margin: 0 0 7px;
+            font-size: 18px;
+            line-height: 1.3;
+        }
+
+        .gallery-caption p {
+            margin: 0;
+            color: #666666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* =====================================
+           Gallery Lightbox
+        ===================================== */
+
+        .gallery-lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 5000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background: rgba(3, 12, 20, 0.92);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .gallery-lightbox.is-open {
+            display: flex;
+        }
+
+        .gallery-lightbox-content {
+            position: relative;
+            width: min(100%, 900px);
+            max-height: 92vh;
+            text-align: center;
+        }
+
+        .gallery-lightbox-image {
+            display: block;
+            max-width: 100%;
+            max-height: 82vh;
+            margin: 0 auto;
+            object-fit: contain;
+            border-radius: 18px;
+            box-shadow: 0 35px 90px rgba(0, 0, 0, 0.55);
+        }
+
+        .gallery-lightbox-caption {
+            margin: 18px auto 0;
+            color: #ffffff;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+
+        .gallery-lightbox-close {
+            position: absolute;
+            top: -18px;
+            right: -18px;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            padding: 0;
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            border-radius: 50%;
+            background: #ffffff;
+            color: #06273f;
+            font-size: 30px;
+            line-height: 1;
+            cursor: pointer;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+        }
+
+        body.lightbox-open {
+            overflow: hidden;
+        }
+
+        /* =====================================
+           Gallery Mobile
+        ===================================== */
+
+        @media (max-width: 1050px) {
+            .phone-gallery {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 780px) {
+            .gallery-hero {
+                padding: 78px 0 84px;
+            }
+
+            .gallery-hero h1 {
+                font-size: clamp(50px, 14vw, 74px);
+                letter-spacing: -3px;
+            }
+
+            .gallery-section {
+                padding: 80px 0 95px;
+            }
+
+            .gallery-intro {
+                margin-bottom: 42px;
+            }
+
+            .gallery-filters {
+                margin-bottom: 45px;
+            }
+
+            .phone-gallery {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 38px 18px;
+            }
+
+            .phone-frame {
+                max-width: 240px;
+                padding: 9px;
+                border-radius: 32px;
+            }
+
+            .phone-screen {
+                border-radius: 25px;
+            }
+
+            .gallery-caption h3 {
+                font-size: 16px;
+            }
+
+            .gallery-caption p {
+                font-size: 13px;
+            }
+
+            .gallery-lightbox {
+                padding: 20px;
+            }
+
+            .gallery-lightbox-close {
+                top: -14px;
+                right: -8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .phone-gallery {
+                grid-template-columns: 1fr;
+                gap: 46px;
+            }
+
+            .phone-frame {
+                max-width: 270px;
+            }
+
+            .gallery-filter {
+                flex: 1 1 auto;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .phone-frame,
+            .phone-screen img,
+            .gallery-filter {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="container nav-wrapper">
+
+            <a
+                href="../index.html"
+                class="brand"
+                aria-label="Pro Real Estate Signs home"
+            >
+                <img
+                    src="../images/Pro Real Estate Signs Logo v2 PNG.png"
+                    alt="Pro Real Estate Signs"
+                >
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+
+                <a href="../index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="coverage.html">Coverage</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="gallery.html" aria-current="page">Gallery</a>
+                <a href="about.html">About</a>
+
+                <a
+                    href="https://prorealestatesigns.signtraker.com/Account/Login"
+                    class="button button-small"
+                >
+                    Log In
+                </a>
+
+            </nav>
+
+            <button
+                class="mobile-menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobile-navigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <nav
+            class="mobile-nav"
+            id="mobile-navigation"
+            aria-label="Mobile navigation"
+        >
+            <a href="../index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="coverage.html">Coverage</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="gallery.html" aria-current="page">Gallery</a>
+            <a href="about.html">About</a>
+
+            <a
+                href="https://prorealestatesigns.signtraker.com/Account/Login"
+                class="mobile-login-button"
+            >
+                Log In
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="gallery-hero">
+
+            <div class="container gallery-hero-content">
+
+                <p class="eyebrow">Installation Gallery</p>
+
+                <h1>
+                    Professional Sign Installations Across the Region.
+                </h1>
+
+                <p class="hero-text">
+                    Explore residential and commercial real estate sign installations
+                    completed throughout Northwest Indiana. Every installation is
+                    supported by organized field operations, modern technology, and
+                    photo confirmation.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="gallery-section">
+
+            <div class="container">
+
+                <div class="gallery-intro">
+
+                    <p class="eyebrow">Recent Work</p>
+
+                    <h2>
+                        Residential and Commercial Installations.
+                    </h2>
+
+                    <p class="section-text">
+                        From traditional residential listings to large commercial
+                        properties, our installations are completed with a consistent,
+                        professional presentation.
+                    </p>
+
+                </div>
+
+                <div
+                    class="gallery-filters"
+                    role="group"
+                    aria-label="Choose installation gallery"
+                >
+                    <button
+                        class="gallery-filter is-active"
+                        type="button"
+                        data-filter="residential"
+                    >
+                        Residential
+                    </button>
+
+                    <button
+                        class="gallery-filter"
+                        type="button"
+                        data-filter="commercial"
+                    >
+                        Commercial
+                    </button>
+                </div>
+
+                <div class="phone-gallery">
+
+                    <!-- Commercial -->
+
+                    <article
+                        class="gallery-item is-hidden"
+                        data-category="commercial"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge commercial 4 by 4 real estate sign installation in Chesterton, Indiana"
+                                >
+                                    <img
+                                        src="../images/commercial-photos/commercial-real-estate-sign-4x4-chesterton-1.jpeg"
+                                        alt="Commercial 4 by 4 real estate sign installation in chesterton, indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Commercial 4×4 Sign Installation</h3>
+                            <p>Chesterton, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item is-hidden"
+                        data-category="commercial"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge commercial 4 by 4 real estate sign installation in Chesterton, Indiana"
+                                >
+                                    <img
+                                        src="../images/commercial-photos/commercial-real-estate-sign-4x4-chesterton-2.jpeg"
+                                        alt="Commercial 4 by 4 real estate sign installation in chesterton, indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Commercial 4×4 Sign Installation</h3>
+                            <p>Chesterton, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item is-hidden"
+                        data-category="commercial"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge commercial 4 by 4 real estate sign installation in Valparaiso, Indiana"
+                                >
+                                    <img
+                                        src="../images/commercial-photos/commercial-real-estate-sign-4x4-valparaiso-1.jpeg"
+                                        alt="Commercial 4 by 4 real estate sign installation in valparaiso, indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Commercial 4×4 Sign Installation</h3>
+                            <p>Valparaiso, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item is-hidden"
+                        data-category="commercial"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge commercial 4 by 8 real estate sign installation in Valparaiso, Indiana"
+                                >
+                                    <img
+                                        src="../images/commercial-photos/commercial-real-estate-sign-4x8-valparaiso-1.jpeg"
+                                        alt="Commercial 4 by 8 real estate sign installation in valparaiso, indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Commercial 4×8 Sign Installation</h3>
+                            <p>Valparaiso, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item is-hidden"
+                        data-category="commercial"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge commercial 4 by 8 real estate sign installation in Valparaiso, Indiana"
+                                >
+                                    <img
+                                        src="../images/commercial-photos/commercial-real-estate-sign-4x8-valparaiso-2.jpeg"
+                                        alt="Commercial 4 by 8 real estate sign installation in valparaiso, indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Commercial 4×8 Sign Installation</h3>
+                            <p>Valparaiso, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item is-hidden"
+                        data-category="commercial"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge commercial 4 by 4 real estate sign installation in Cedar Lake, Indiana"
+                                >
+                                    <img
+                                        src="../images/commercial-photos/commercial-sign-4x4-cedar-lake-1.jpeg"
+                                        alt="Commercial 4 by 4 real estate sign installation in cedar lake, indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Commercial 4×4 Sign Installation</h3>
+                            <p>Cedar Lake, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item is-hidden"
+                        data-category="commercial"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge commercial 4 by 8 skid-mount sign installation in Valparaiso, Indiana"
+                                >
+                                    <img
+                                        src="../images/commercial-photos/commercial-sign-4x8-skid-mount-valparaiso-1.jpeg"
+                                        alt="Commercial 4 by 8 skid-mount sign installation in valparaiso, indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Commercial Skid-Mount Sign</h3>
+                            <p>Valparaiso, Indiana</p>
+                        </div>
+                    </article>
+
+                    <!-- Residential -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in Cedar Lake"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-cedar-lake-1.jpeg"
+                                        alt="Residential real estate sign installation in Cedar Lake, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>Cedar Lake, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in Cedar Lake"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-cedar-lake-2.jpeg"
+                                        alt="Residential real estate sign installation in Cedar Lake, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>Cedar Lake, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in Chesterton"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-chesterton-1.jpeg"
+                                        alt="Residential real estate sign installation in Chesterton, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>Chesterton, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in Crown Point"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-crown-point-1.jpeg"
+                                        alt="Residential real estate sign installation in Crown Point, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>Crown Point, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in Dyer"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-dyer-1.jpeg"
+                                        alt="Residential real estate sign installation in Dyer, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>Dyer, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in Hammond"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-hammond-1.jpeg"
+                                        alt="Residential real estate sign installation in Hammond, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>Hammond, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in Highland"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-highland-1.jpeg"
+                                        alt="Residential real estate sign installation in Highland, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>Highland, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in LaPorte"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-laporte-1.jpeg"
+                                        alt="Residential real estate sign installation in LaPorte, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>LaPorte, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in LaPorte"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-laporte-2.jpeg"
+                                        alt="Residential real estate sign installation in LaPorte, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>LaPorte, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in Merrillville"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-merrillville-1.jpeg"
+                                        alt="Residential real estate sign installation in Merrillville, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>Merrillville, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in Michigan City"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-michigan-city-1.jpeg"
+                                        alt="Residential real estate sign installation in Michigan City, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>Michigan City, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in Munster"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-munster-1.jpeg"
+                                        alt="Residential real estate sign installation in Munster, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>Munster, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in Munster"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-munster-2.jpeg"
+                                        alt="Residential real estate sign installation in Munster, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>Munster, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign and rider installation in Crown Point"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-rider-crown-point-1.jpeg"
+                                        alt="Residential real estate sign and rider installation in Crown Point, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Sign and Rider Installation</h3>
+                            <p>Crown Point, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign and rider installation in Hobart"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-rider-hobart-1.jpeg"
+                                        alt="Residential real estate sign and rider installation in Hobart, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Sign and Rider Installation</h3>
+                            <p>Hobart, Indiana</p>
+                        </div>
+                    </article>
+
+                   
+                 <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign and rider installation in Lowell"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-rider-lowell-1.jpeg"
+                                        alt="Residential real estate sign and rider installation in Lowell, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Sign and Rider Installation</h3>
+                            <p>Lowell, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge luxury residential sign installation in Lowell"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-rider-luxury-lowell-1.jpeg"
+                                        alt="Luxury residential real estate sign and rider installation in Lowell, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Luxury Property Installation</h3>
+                            <p>Lowell, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign and rider installation in Munster"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-rider-munster-1.jpeg"
+                                        alt="Residential real estate sign and rider installation in Munster, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Sign and Rider Installation</h3>
+                            <p>Munster, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in Saint John"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-st-john-1.jpeg"
+                                        alt="Residential real estate sign installation in Saint John, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>St. John, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in Saint John"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-st-john-2.jpeg"
+                                        alt="Residential real estate sign installation in Saint John, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>St. John, Indiana</p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="gallery-item"
+                        data-category="residential"
+                    >
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <button
+                                    type="button"
+                                    class="gallery-image-button"
+                                    aria-label="Enlarge residential sign installation in Valparaiso"
+                                >
+                                    <img
+                                        src="../images/residential-photos/residential-real-estate-sign-valparaiso-1.jpeg"
+                                        alt="Residential real estate sign installation in Valparaiso, Indiana"
+                                        loading="lazy"
+                                    >
+                                </button>
+                            </div>
+                            <span class="phone-home-indicator"></span>
+                        </div>
+
+                        <div class="gallery-caption">
+                            <h3>Residential Installation</h3>
+                            <p>Valparaiso, Indiana</p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="cta">
+
+            <div class="container">
+
+                <p class="eyebrow">Professional Sign Service</p>
+
+                <h2>
+                    Put Your Listings on a Better Sign Infrastructure.
+                </h2>
+
+                <p class="section-text">
+                    Existing customers can log in to place and manage orders.
+                    New agents, teams, and brokerages can request an account to
+                    begin using Pro Real Estate Signs.
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a
+                        href="https://prorealestatesigns.signtraker.com/Account/Login"
+                        class="button"
+                    >
+                        Log In
+                    </a>
+
+                    <a
+                        href="https://prorealestatesigns.signtraker.com/Account/Register"
+                        class="button button-secondary"
+                    >
+                        Request Account
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="container footer-layout">
+
+            <div class="footer-brand">
+
+                <img
+                    src="../images/Pro Real Estate Signs Logo v2 White PNG.png"
+                    alt="Pro Real Estate Signs"
+                >
+
+                <p>
+                    The Region's Real Estate Sign Infrastructure.
+                </p>
+
+                <p class="footer-social-title">
+                    Follow Us
+                </p>
+
+                <div class="footer-social">
+
+                    <a
+                        href="https://www.facebook.com/people/Pro-Real-Estate-Signs/61568027458378/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit Pro Real Estate Signs on Facebook"
+                    >
+                        <img
+                            src="../images/facebook.svg"
+                            alt="Facebook"
+                        >
+                    </a>
+
+                    <a
+                        href="https://www.tiktok.com/@prorealestatesigns"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit Pro Real Estate Signs on TikTok"
+                    >
+                        <img
+                            src="../images/tiktok.svg"
+                            alt="TikTok"
+                        >
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+
+            <p>
+                © 2026 Pro Real Estate Signs, LLC. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <div
+        class="gallery-lightbox"
+        id="gallery-lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Enlarged installation photo"
+    >
+        <div class="gallery-lightbox-content">
+
+            <button
+                type="button"
+                class="gallery-lightbox-close"
+                aria-label="Close enlarged image"
+            >
+                ×
+            </button>
+
+            <img
+                class="gallery-lightbox-image"
+                src=""
+                alt=""
+            >
+
+            <p class="gallery-lightbox-caption"></p>
+
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+
+    <script>
+        const filterButtons = document.querySelectorAll(".gallery-filter");
+        const galleryItems = document.querySelectorAll(".gallery-item");
+
+        function showGalleryCategory(category) {
+            galleryItems.forEach((item) => {
+                item.classList.toggle(
+                    "is-hidden",
+                    item.dataset.category !== category
+                );
+            });
+        }
+
+        showGalleryCategory("residential");
+
+        filterButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const selectedFilter = button.dataset.filter;
+
+                filterButtons.forEach((filterButton) => {
+                    filterButton.classList.remove("is-active");
+                });
+
+                button.classList.add("is-active");
+                showGalleryCategory(selectedFilter);
+            });
+        });
+
+        const lightbox = document.getElementById("gallery-lightbox");
+        const lightboxImage = lightbox.querySelector(".gallery-lightbox-image");
+        const lightboxCaption = lightbox.querySelector(".gallery-lightbox-caption");
+        const lightboxClose = lightbox.querySelector(".gallery-lightbox-close");
+        const galleryImageButtons = document.querySelectorAll(".gallery-image-button");
+
+        let lastOpenedButton = null;
+
+        function closeLightbox() {
+            lightbox.classList.remove("is-open");
+            document.body.classList.remove("lightbox-open");
+
+            lightboxImage.src = "";
+            lightboxImage.alt = "";
+            lightboxCaption.textContent = "";
+
+            if (lastOpenedButton) {
+                lastOpenedButton.focus();
+            }
+        }
+
+        galleryImageButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const image = button.querySelector("img");
+                const galleryItem = button.closest(".gallery-item");
+                const heading = galleryItem.querySelector("h3");
+                const location = galleryItem.querySelector(".gallery-caption p");
+
+                lastOpenedButton = button;
+
+                lightboxImage.src = image.src;
+                lightboxImage.alt = image.alt;
+                lightboxCaption.textContent =
+                    heading.textContent + " · " + location.textContent;
+
+                lightbox.classList.add("is-open");
+                document.body.classList.add("lightbox-open");
+
+                lightboxClose.focus();
+            });
+        });
+
+        lightboxClose.addEventListener("click", closeLightbox);
+
+        lightbox.addEventListener("click", (event) => {
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (
+                event.key === "Escape" &&
+                lightbox.classList.contains("is-open")
+            ) {
+                closeLightbox();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
