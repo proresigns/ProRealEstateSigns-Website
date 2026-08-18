@@ -703,10 +703,14 @@
 
 <div class="expo-action">
 
-    <a href="https://buy.stripe.com/fZu5kE3hj6MOg5WamQ5gc00"
-       class="shield-button shield-button-dark">
-        Join for $269
-    </a>
+<a href="https://buy.stripe.com/fZu5kE3hj6MOg5WamQ5gc00"
+   class="shield-button shield-button-dark"
+   onclick="gtag('event', 'signshield_checkout', {
+       plan: 'expo_annual',
+       price: 269
+   });">
+    Join for $269
+</a>
 
     <p class="expo-note">
         NIRA Trade Expo special pricing
@@ -743,7 +747,11 @@
                         </ul>
 
 <a href="https://buy.stripe.com/3cIdRa19bgno8Du2Uo5gc02"
-   class="shield-button shield-button-dark">
+   class="shield-button shield-button-dark"
+   onclick="gtag('event', 'signshield_checkout', {
+       plan: 'annual',
+       price: 299.99
+   });">
     Join Annual
 </a>
 
@@ -770,8 +778,12 @@
                             <li>Convenient monthly billing</li>
                         </ul>
 
-                       <a href="https://buy.stripe.com/aFa3cw5prc783jagLe5gc01"
-    class="shield-button shield-button-dark">
+<a href="https://buy.stripe.com/aFa3cw5prc783jagLe5gc01"
+   class="shield-button shield-button-dark"
+   onclick="gtag('event', 'signshield_checkout', {
+       plan: 'monthly',
+       price: 29.99
+   });">
     Join Monthly
 </a>
 
