@@ -11,6 +11,17 @@
         gtag('config', 'G-1F6VEGTLP6');
     </script>
 
+    <script>
+    if (!sessionStorage.getItem('signshield_purchase_tracked')) {
+
+        gtag('event', 'signshield_purchase', {
+            product: 'SignShield+'
+        });
+
+        sessionStorage.setItem('signshield_purchase_tracked', 'true');
+    }
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
