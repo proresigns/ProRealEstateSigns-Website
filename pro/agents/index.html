@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1F6VEGTLP6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1F6VEGTLP6');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Keep out of Google during expo soft launch -->
+    <meta name="robots" content="noindex, follow">
+
+    <meta name="description"
+        content="Agent SignShield+ provides peace of mind for qualifying sign inventory managed by Pro Real Estate Signs.">
+
+    <title>Agent SignShield+ | Pro Real Estate Signs</title>
+
+    <link rel="stylesheet" href="../../style.css?v=2">
+
+    <link rel="icon" href="../../assets/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+
+    <style>
+
+        .shield-hero {
+            padding: 105px 0 95px;
+            background:
+                radial-gradient(circle at 80% 20%, rgba(30, 86, 180, .24), transparent 36%),
+                #05070b;
+            color: #fff;
+        }
+
+        .shield-hero-inner {
+            max-width: 900px;
+        }
+
+        .shield-hero .eyebrow {
+            color: #8db7ff;
+        }
+
+        .shield-hero h1 {
+            max-width: 850px;
+            margin: 0 0 24px;
+            font-size: clamp(3rem, 7vw, 5.6rem);
+            line-height: 1;
+            letter-spacing: -.045em;
+        }
+
+        .shield-hero-text {
+            max-width: 730px;
+            margin: 0 0 36px;
+            font-size: 1.2rem;
+            line-height: 1.75;
+            color: rgba(255,255,255,.76);
+        }
+
+        .shield-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 25px;
+            border: 0;
+            border-radius: 7px;
+            background: #fff;
+            color: #080b10;
+            font: inherit;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform .2s ease;
+        }
+
+        .shield-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .shield-button-dark {
+            background: #080b10;
+            color: #fff;
+        }
+
+        .shield-section {
+            padding: 90px 0;
+        }
+
+        .shield-soft {
+            background: #f5f7fa;
+        }
+
+        .shield-dark {
+            background: #080b10;
+            color: #fff;
+        }
+
+        .shield-heading {
+            max-width: 820px;
+            margin-bottom: 45px;
+        }
+
+        .shield-heading h2 {
+            margin: 0 0 18px;
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            line-height: 1.08;
+            letter-spacing: -.035em;
+        }
+
+        .shield-heading p {
+            margin: 0;
+            font-size: 1.1rem;
+            line-height: 1.75;
+            color: #626c77;
+        }
+
+        .shield-dark .shield-heading p {
+            color: rgba(255,255,255,.7);
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .benefit-card {
+            padding: 32px;
+            border: 1px solid #e0e5ea;
+            border-radius: 13px;
+            background: #fff;
+        }
+
+        .benefit-card h3 {
+            margin: 0 0 12px;
+            font-size: 1.3rem;
+        }
+
+        .benefit-card p {
+            margin: 0;
+            line-height: 1.7;
+            color: #626c77;
+        }
+
+        .value-wrap {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .value-copy h2 {
+            margin: 0 0 20px;
+            font-size: clamp(2.3rem, 5vw, 4rem);
+            line-height: 1.08;
+            letter-spacing: -.035em;
+        }
+
+        .value-copy p {
+            margin: 0;
+            max-width: 650px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: rgba(255,255,255,.72);
+        }
+
+        .value-box {
+            padding: 40px;
+            border: 1px solid rgba(255,255,255,.15);
+            border-radius: 14px;
+            background: rgba(255,255,255,.05);
+        }
+
+        .value-label {
+            margin-bottom: 10px;
+            font-size: .78rem;
+            font-weight: 800;
+            letter-spacing: .13em;
+            text-transform: uppercase;
+            color: #8db7ff;
+        }
+
+        .value-number {
+            margin-bottom: 8px;
+            font-size: clamp(3rem, 7vw, 5rem);
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -.04em;
+        }
+
+        .value-box p {
+            margin: 0;
+            line-height: 1.7;
+            color: rgba(255,255,255,.68);
+        }
+
+        .pricing-intro {
+            max-width: 780px;
+            margin: 0 auto 45px;
+            text-align: center;
+        }
+
+        .pricing-intro h2 {
+            margin: 0 0 18px;
+            font-size: clamp(2.4rem, 5vw, 4rem);
+            line-height: 1.08;
+            letter-spacing: -.035em;
+        }
+
+        .pricing-intro p {
+            margin: 0;
+            font-size: 1.1rem;
+            line-height: 1.75;
+            color: #626c77;
+        }
+
+        /* NIRA card sits above the two standard options */
+        .expo-price-wrap {
+            max-width: 950px;
+            margin: 0 auto 24px;
+        }
+
+        .standard-pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .price-card {
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            border: 1px solid #dfe4e9;
+            border-radius: 15px;
+            background: #fff;
+        }
+
+        .price-card-featured {
+            border: 2px solid #145da0;
+            box-shadow: 0 14px 38px rgba(20, 93, 160, .12);
+        }
+
+        .expo-card {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .show-badge {
+            display: inline-block;
+            align-self: flex-start;
+            margin-bottom: 22px;
+            padding: 7px 11px;
+            border-radius: 999px;
+            background: #e8f1ff;
+            color: #145da0;
+            font-size: .72rem;
+            font-weight: 800;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+        }
+
+        .price-card h3 {
+            margin: 0 0 8px;
+            font-size: 1.5rem;
+        }
+
+        .price {
+            margin: 10px 0 4px;
+            font-size: 3.3rem;
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -.04em;
+        }
+
+        .price-term {
+            margin-bottom: 24px;
+            color: #66707a;
+        }
+
+        .price-card ul {
+            margin: 0 0 30px;
+            padding-left: 20px;
+            color: #4f5964;
+            line-height: 1.8;
+        }
+
+        .price-card .shield-button {
+            margin-top: auto;
+        }
+
+        .expo-action {
+            min-width: 220px;
+        }
+
+        .expo-action .shield-button {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .regular-price {
+            margin: 4px 0 18px;
+            color: #7a838c;
+            font-size: .9rem;
+        }
+
+        .regular-price s {
+            margin-right: 5px;
+        }
+
+        .expo-note {
+            margin: 12px 0 0;
+            color: #727c87;
+            font-size: .82rem;
+            text-align: center;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .details-card {
+            padding: 36px;
+            border: 1px solid #e0e5ea;
+            border-radius: 13px;
+            background: #fff;
+        }
+
+        .details-card h3 {
+            margin: 0 0 20px;
+            font-size: 1.5rem;
+        }
+
+        .details-card ul {
+            margin: 0;
+            padding-left: 20px;
+            line-height: 1.85;
+            color: #59636e;
+        }
+
+        .artwork-box {
+            max-width: 900px;
+            margin: 40px auto 0;
+            padding: 30px 34px;
+            border-left: 4px solid #145da0;
+            background: #fff;
+        }
+
+        .artwork-box h3 {
+            margin: 0 0 10px;
+            font-size: 1.25rem;
+        }
+
+        .artwork-box p {
+            margin: 0;
+            line-height: 1.7;
+            color: #5f6974;
+        }
+
+        .final-cta {
+            padding: 100px 0;
+            background:
+                radial-gradient(circle at 50% 100%, rgba(30,86,180,.2), transparent 40%),
+                #05070b;
+            color: #fff;
+            text-align: center;
+        }
+
+        .final-cta-inner {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .final-cta h2 {
+            margin: 0 0 20px;
+            font-size: clamp(2.5rem, 5vw, 4.3rem);
+            line-height: 1.06;
+            letter-spacing: -.04em;
+        }
+
+        .final-cta p {
+            max-width: 650px;
+            margin: 0 auto 32px;
+            font-size: 1.1rem;
+            line-height: 1.75;
+            color: rgba(255,255,255,.72);
+        }
+
+        .terms-note {
+            padding: 28px 20px;
+            background: #f5f7fa;
+            text-align: center;
+            color: #747e88;
+            font-size: .78rem;
+            line-height: 1.65;
+        }
+
+        .terms-note p {
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .shield-footer .footer-layout {
+            display: block;
+        }
+
+        @media (max-width: 900px) {
+
+            .benefit-grid,
+            .standard-pricing-grid,
+            .details-grid,
+            .value-wrap,
+            .expo-card {
+                grid-template-columns: 1fr;
+            }
+
+            .expo-action {
+                min-width: 0;
+            }
+
+            .shield-section {
+                padding: 70px 0;
+            }
+
+            .shield-hero {
+                padding: 85px 0 75px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .shield-button {
+                width: 100%;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+            .price-card,
+            .details-card,
+            .benefit-card {
+                padding: 28px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container nav-wrapper">
+
+            <a href="/" class="brand" aria-label="Pro Real Estate Signs home">
+                <img src="../../images/Pro Real Estate Signs Logo v2 PNG.png"
+                    alt="Pro Real Estate Signs">
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="/">Home</a>
+                <a href="../../pages/services.html">Services</a>
+                <a href="../../pages/coverage.html">Coverage</a>
+                <a href="../../pages/how-it-works.html">How It Works</a>
+                <a href="../../pages/gallery.html">Gallery</a>
+                <a href="../../pages/about.html">About</a>
+                <a href="../../pages/opportunities.html">Opportunities</a>
+                <a href="../../pages/contact.html">Contact</a>
+
+                <a href="https://prorealestatesigns.signtraker.com/Account/Login"
+                    class="button button-small">
+                    Log In
+                </a>
+            </nav>
+
+            <button class="mobile-menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobile-navigation">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <nav class="mobile-nav"
+            id="mobile-navigation"
+            aria-label="Mobile navigation">
+
+            <a href="/">Home</a>
+            <a href="../../pages/services.html">Services</a>
+            <a href="../../pages/coverage.html">Coverage</a>
+            <a href="../../pages/how-it-works.html">How It Works</a>
+            <a href="../../pages/gallery.html">Gallery</a>
+            <a href="../../pages/about.html">About</a>
+            <a href="../../pages/opportunities.html">Opportunities</a>
+            <a href="../../pages/contact.html">Contact</a>
+
+            <a href="https://prorealestatesigns.signtraker.com/Account/Login"
+                class="mobile-login-button">
+                Log In
+            </a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="shield-hero">
+            <div class="container shield-hero-inner">
+
+                <p class="eyebrow">Agent SignShield+</p>
+
+                <h1>
+                    Protect your signs. Protect your budget.
+                </h1>
+
+                <p class="shield-hero-text">
+                    SignShield+ gives real estate professionals peace of mind
+                    when qualifying managed signs are physically damaged beyond
+                    reasonable repair.
+                </p>
+
+                <a href="#pricing" class="shield-button">
+                    Choose Your Plan
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- BENEFITS -->
+        <section class="shield-section shield-soft">
+            <div class="container">
+
+                <div class="shield-heading">
+
+                    <p class="eyebrow">Peace of Mind</p>
+
+                    <h2>
+                        Your signs work outside. Things happen.
+                    </h2>
+
+                    <p>
+                        Windstorms, torn grommets, smashed corners, impact damage,
+                        and permanent graffiti can turn a perfectly good sign into
+                        an unexpected replacement expense. SignShield+ is designed
+                        for those moments.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit-grid">
+
+                    <article class="benefit-card">
+                        <h3>Up to 6 Replacements</h3>
+
+                        <p>
+                            Receive up to six qualifying replacements during each
+                            membership year.
+                        </p>
+                    </article>
+
+
+                    <article class="benefit-card">
+                        <h3>Signs & Riders</h3>
+
+                        <p>
+                            Eligible managed signs and riders up to 24×30 may
+                            qualify for replacement.
+                        </p>
+                    </article>
+
+
+                    <article class="benefit-card">
+                        <h3>We Handle It</h3>
+
+                        <p>
+                            Because we already manage your inventory, we inspect
+                            the damaged item and determine whether it can reasonably
+                            be repaired or should be replaced.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- VALUE -->
+        <section class="shield-section shield-dark">
+            <div class="container value-wrap">
+
+                <div class="value-copy">
+
+                    <p class="eyebrow">The Value</p>
+
+                    <h2>
+                        One damaged sign can become an unexpected expense.
+                    </h2>
+
+                    <p>
+                        A standard 24×30 replacement can cost $76. Agent
+                        SignShield+ includes up to six qualifying replacements
+                        per membership year, giving you protection against
+                        potentially hundreds of dollars in unexpected
+                        replacement costs.
+                    </p>
+
+                </div>
+
+
+                <div class="value-box">
+
+                    <div class="value-label">
+                        Potential Replacement Value
+                    </div>
+
+                    <div class="value-number">
+                        Up to $456
+                    </div>
+
+                    <p>
+                        Based on six qualifying 24×30 replacements at a
+                        standard replacement value of $76 each.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PRICING -->
+        <section class="shield-section shield-soft" id="pricing">
+            <div class="container">
+
+                <div class="pricing-intro">
+
+                    <p class="eyebrow">Join Agent SignShield+</p>
+
+                    <h2>
+                        Choose the plan that works for you.
+                    </h2>
+
+                    <p>
+                        Every plan includes the same Agent SignShield+ benefits.
+                        Choose the payment option that works best for you.
+                    </p>
+
+                </div>
+
+
+                <!-- NIRA EXPO SPECIAL -->
+                <div class="expo-price-wrap">
+
+                    <article class="price-card price-card-featured expo-card">
+
+                        <div>
+
+                            <div class="show-badge">
+                                NIRA Expo Special
+                            </div>
+
+                            <h3>Expo Annual Membership</h3>
+
+                            <div class="price">
+                                $269
+                            </div>
+
+                            <div class="price-term">
+                                first year, paid in full
+                            </div>
+
+                            <p class="regular-price">
+                                Regular annual price $299.99
+                            </p>
+
+                            <ul>
+                                <li>12 months of Agent SignShield+</li>
+                                <li>Up to 6 qualifying replacements</li>
+                                <li>Eligible signs and riders up to 24×30</li>
+                                <li>One payment for the entire first year</li>
+                            </ul>
+
+                        </div>
+
+<div class="expo-action">
+
+    <a href="https://buy.stripe.com/fZu5kE3hj6MOg5WamQ5gc00"
+       class="shield-button shield-button-dark">
+        Join for $269
+    </a>
+
+    <p class="expo-note">
+        NIRA Trade Expo special pricing
+    </p>
+
+</div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- STANDARD PRICING -->
+                <div class="standard-pricing-grid">
+
+                    <!-- STANDARD ANNUAL -->
+                    <article class="price-card">
+
+                        <h3>Annual Membership</h3>
+
+                        <div class="price">
+                            $299.99
+                        </div>
+
+                        <div class="price-term">
+                            1 year, paid in full
+                        </div>
+
+                        <ul>
+                            <li>12 months of Agent SignShield+</li>
+                            <li>Up to 6 qualifying replacements</li>
+                            <li>Eligible signs and riders up to 24×30</li>
+                            <li>One annual payment</li>
+                        </ul>
+
+<a href="https://buy.stripe.com/3cIdRa19bgno8Du2Uo5gc02"
+   class="shield-button shield-button-dark">
+    Join Annual
+</a>
+
+                    </article>
+
+
+                    <!-- MONTHLY -->
+                    <article class="price-card">
+
+                        <h3>Monthly Membership</h3>
+
+                        <div class="price">
+                            $29.99
+                        </div>
+
+                        <div class="price-term">
+                            per month
+                        </div>
+
+                        <ul>
+                            <li>12-month membership commitment</li>
+                            <li>Up to 6 qualifying replacements</li>
+                            <li>Eligible signs and riders up to 24×30</li>
+                            <li>Convenient monthly billing</li>
+                        </ul>
+
+                       <a href="https://buy.stripe.com/aFa3cw5prc783jagLe5gc01"
+    class="shield-button shield-button-dark">
+    Join Monthly
+</a>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- DETAILS -->
+        <section class="shield-section">
+            <div class="container">
+
+                <div class="shield-heading">
+
+                    <p class="eyebrow">What's Protected</p>
+
+                    <h2>
+                        Built for real physical damage.
+                    </h2>
+
+                    <p>
+                        SignShield+ is designed for qualifying physical damage
+                        that makes a managed sign unsuitable for continued
+                        professional use.
+                    </p>
+
+                </div>
+
+
+                <div class="details-grid">
+
+                    <article class="details-card">
+
+                        <h3>Examples That May Qualify</h3>
+
+                        <ul>
+                            <li>Irreparable wind damage</li>
+                            <li>Torn-out grommets and surrounding material</li>
+                            <li>Smashed or severely damaged corners</li>
+                            <li>Permanent graffiti that cannot be cleaned</li>
+                            <li>Other qualifying physical damage beyond reasonable repair</li>
+                        </ul>
+
+                    </article>
+
+
+                    <article class="details-card">
+
+                        <h3>What's Not Included</h3>
+
+                        <ul>
+                            <li>Missing or stolen signs</li>
+                            <li>Pre-existing damage</li>
+                            <li>Normal wear and aging</li>
+                            <li>Fading or outdated artwork</li>
+                            <li>Damage that can reasonably be cleaned or repaired</li>
+                            <li>3mm and 4mm coroplast</li>
+                        </ul>
+
+                    </article>
+
+                </div>
+
+
+                <div class="artwork-box">
+
+                    <h3>Artwork Requirements</h3>
+
+                    <p>
+                        Replacement production requires production-ready artwork
+                        supplied by the customer or artwork already on file with
+                        Pro Real Estate Signs. If new artwork or design work is
+                        required, normal design fees apply.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FINAL CTA -->
+        <section class="final-cta">
+            <div class="container final-cta-inner">
+
+                <p class="eyebrow">Agent SignShield+</p>
+
+                <h2>
+                    One less thing to worry about.
+                </h2>
+
+                <p>
+                    Your signs are already professionally managed. Add another
+                    layer of peace of mind with Agent SignShield+.
+                </p>
+
+                <a href="#pricing" class="shield-button">
+                    Choose Your Plan
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- DISCLAIMER -->
+    <div class="terms-note">
+
+        <p>
+            Agent SignShield+ is subject to membership terms, eligibility
+            requirements, and replacement limits. Benefits apply only to
+            qualifying physical damage occurring after enrollment to eligible
+            inventory managed by Pro Real Estate Signs. Missing or stolen signs,
+            pre-existing damage, normal wear, fading, and other exclusions apply.
+            Replacement eligibility is determined by Pro Real Estate Signs.
+            Annual and monthly memberships are subject to the applicable
+            SignShield+ membership agreement.
+        </p>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer shield-footer">
+
+        <div class="container footer-layout">
+
+            <div class="footer-brand">
+
+                <img src="../../images/Pro Real Estate Signs Logo v2 White PNG.png"
+                    alt="Pro Real Estate Signs">
+
+                <p>
+                    The Region's Real Estate Sign Infrastructure.
+                </p>
+
+                <p class="footer-social-title">
+                    Follow Us
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="https://www.facebook.com/ProRealEstateSigns"
+                        target="_blank"
+                        aria-label="Facebook">
+
+                        <img src="../../images/facebook.svg"
+                            alt="Facebook">
+
+                    </a>
+
+                    <a href="https://www.tiktok.com/@prorealestatesigns"
+                        target="_blank"
+                        aria-label="TikTok">
+
+                        <img src="../../images/tiktok.svg"
+                            alt="TikTok">
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+<div class="container footer-bottom">
+
+    <p>
+        © 2026 Pro Real Estate Signs, LLC. All rights reserved.
+        &nbsp;|&nbsp;
+        <a href="/privacy/">Privacy Policy</a>
+    </p>
+
+</div>
+
+    </footer>
+
+
+    <script src="../../script.js?v=20260722-1"></script>
+
+</body>
+</html>
