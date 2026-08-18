@@ -11,15 +11,22 @@
         gtag('config', 'G-1F6VEGTLP6');
     </script>
 
-    <script>
-    if (!sessionStorage.getItem('signshield_purchase_tracked')) {
+<script>
+    window.addEventListener('load', function () {
 
-        gtag('event', 'signshield_purchase', {
-            product: 'SignShield+'
-        });
+        if (!sessionStorage.getItem('signshield_purchase_tracked')) {
 
-        sessionStorage.setItem('signshield_purchase_tracked', 'true');
-    }
+            gtag('event', 'signshield_purchase', {
+                product: 'SignShield+',
+                send_to: 'G-1F6VEGTLP6'
+            });
+
+            sessionStorage.setItem('signshield_purchase_tracked', 'true');
+
+            console.log('SignShield+ purchase event sent to GA4');
+        }
+
+    });
 </script>
 
     <meta charset="UTF-8">
